@@ -1,0 +1,235 @@
+body {
+  font-family: "Avenir Next";
+  margin: 0 auto; }
+  body .logo-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5E6D8C; }
+    body .logo-header .header-logo h1 {
+      font-size: 22px; }
+      body .logo-header .header-logo h1 a {
+        color: #FFF;
+        text-decoration: none;
+        display: inline-block; }
+        body .logo-header .header-logo h1 a .logo {
+          width: 44px;
+          height: 44px;
+          margin: 0 10px 15px 0; }
+  body .month-header {
+    height: 120px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; }
+    body .month-header .header-month {
+      position: relative;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body .month-header .header-month h2 {
+        font-size: 45px;
+        text-align: center; }
+      body .month-header .header-month a {
+        font-size: 20px;
+        position: absolute;
+        top: auto;
+        left: 95%;
+        color: #4C4C4C;
+        text-decoration: none; }
+        body .month-header .header-month a .fas {
+          margin-left: 10px; }
+    body .month-header .border {
+      width: 80%;
+      height: 10px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      background-color: #cccccc; }
+  body main .description-wrapper {
+    width: 100%;
+    background-color: #e6e6e6; }
+    body main .description-wrapper p {
+      text-align: center; }
+  body main .genre-wrapper {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    body main .genre-wrapper h2 {
+      width: 100%;
+      padding: 0 0 10px 0;
+      border-bottom: 3px solid #e6e6e6; }
+    body main .genre-wrapper .genre {
+      height: 200px;
+      width: 35%;
+      position: relative;
+      margin: 50px auto;
+      border-top: 3px solid #e6e6e6;
+      border-left: 3px solid #e6e6e6;
+      border-right: 10px solid #e6e6e6;
+      border-bottom: 10px solid #e6e6e6;
+      border-radius: 20px; }
+      body main .genre-wrapper .genre p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 30px; }
+      body main .genre-wrapper .genre a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  body main .calendar-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff; }
+    body main .calendar-wrapper .day-wrapper .day-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #cccccc;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 120px;
+      z-index: 1;
+      height: 65px;
+      padding: 0 0 0 0;
+      text-align: center;
+      background-color: #fff; }
+      body main .calendar-wrapper .day-wrapper .day-row h3 {
+        padding-bottom: 10px; }
+        body main .calendar-wrapper .day-wrapper .day-row h3 .day {
+          font-size: 40px; }
+        body main .calendar-wrapper .day-wrapper .day-row h3 .dow {
+          color: #fff;
+          padding: 5px;
+          border-radius: 20px;
+          margin-left: 5px;
+          background-color: gray; }
+        body main .calendar-wrapper .day-wrapper .day-row h3 .sat {
+          background-color: #1E65AC; }
+        body main .calendar-wrapper .day-wrapper .day-row h3 .sun {
+          background-color: #CF3743; }
+      body main .calendar-wrapper .day-wrapper .day-row .move-wrapper {
+        position: -webkit-sticky;
+        position: sticky;
+        margin-left: 20px;
+        text-align: center;
+        background-color: white; }
+        body main .calendar-wrapper .day-wrapper .day-row .move-wrapper .move-box {
+          -moz-appearance: menulist;
+          -webkit-appearance: menulist;
+          padding: 5px;
+          border: 1px solid #e6e6e6; }
+        body main .calendar-wrapper .day-wrapper .day-row .move-wrapper span {
+          cursor: pointer;
+          padding: 5px;
+          margin-left: 5px;
+          background-color: #e6e6e6;
+          border-radius: 10px; }
+    body main .calendar-wrapper .day-wrapper .items {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px 0 30px 0; }
+      body main .calendar-wrapper .day-wrapper .items .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1% 1%;
+        position: relative;
+        width: 18%;
+        height: 225px;
+        border-top: 3px solid #e6e6e6;
+        border-left: 3px solid #e6e6e6;
+        border-right: 10px solid #e6e6e6;
+        border-bottom: 10px solid #e6e6e6;
+        border-radius: 20px; }
+        body main .calendar-wrapper .day-wrapper .items .item img {
+          height: 70%;
+          width: 58%;
+          margin-left: 3%;
+          border-radius: 10px; }
+        body main .calendar-wrapper .day-wrapper .items .item a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+        body main .calendar-wrapper .day-wrapper .items .item .info {
+          margin: 0 7px 0 7px; }
+          body main .calendar-wrapper .day-wrapper .items .item .info p {
+            font-size: small;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3, 4, 5; }
+            body main .calendar-wrapper .day-wrapper .items .item .info p .fa-amazon {
+              margin-right: 3px; }
+          body main .calendar-wrapper .day-wrapper .items .item .info .title {
+            font-size: 20px;
+            padding-bottom: 5px;
+            margin-bottom: 20px; }
+          body main .calendar-wrapper .day-wrapper .items .item .info .author {
+            font-size: 16px;
+            border-top: 1px solid #e6e6e6; }
+          body main .calendar-wrapper .day-wrapper .items .item .info .company {
+            font-size: 16px;
+            border-top: 1px solid #e6e6e6; }
+      body main .calendar-wrapper .day-wrapper .items .games {
+        align-items: center;
+        justify-content: center; }
+        body main .calendar-wrapper .day-wrapper .items .games .game {
+          height: 300px; }
+          body main .calendar-wrapper .day-wrapper .items .games .game img {
+            height: 90%;
+            width: 60%; }
+          body main .calendar-wrapper .day-wrapper .items .games .game .info {
+            margin: 0 7px 0 7px; }
+            body main .calendar-wrapper .day-wrapper .items .games .game .info p {
+              font-size: small;
+              text-align: center;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3, 4, 5; }
+              body main .calendar-wrapper .day-wrapper .items .games .game .info p .fa-amazon {
+                margin-right: 3px; }
+            body main .calendar-wrapper .day-wrapper .items .games .game .info .company {
+              font-size: 16px;
+              border-top: 1px solid #e6e6e6; }
+      @media (max-width: 1024px) {
+        body main .calendar-wrapper .day-wrapper .items .item {
+          width: 23%; }
+          body main .calendar-wrapper .day-wrapper .items .item .info .title {
+            font-size: 15px; }
+          body main .calendar-wrapper .day-wrapper .items .item .info .author {
+            font-size: 12px; } }
+  body .to-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90%;
+    left: 90%;
+    z-index: 1; }
+
+footer {
+  color: #FFF;
+  height: 50px;
+  background-color: #5E6D8C;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */
